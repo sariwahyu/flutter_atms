@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_atms/model/supermarket_list.dart';
 import 'package:flutter_atms/supermarket.dart';
 
 void main() {

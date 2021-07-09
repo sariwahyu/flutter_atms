@@ -4,29 +4,29 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_atms/model/supermarket_list.dart';
 import 'package:flutter_atms/supermarket.dart';
 
-class ItemSupermarket extends StatelessWidget {
+class DetailItemSupermarket extends StatelessWidget {
   final SupermarketItems supermarketItem;
 
-  ItemSupermarket({required this.supermarketItem});
+  DetailItemSupermarket({required this.supermarketItem});
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         if (constraints.maxWidth <= 600) {
-          return ItemSupermarketMobile(supermarketItem: supermarketItem);
+          return DetailItemSupermarketMobile(supermarketItem: supermarketItem);
         } else {
-          return ItemSupermarketWeb(supermarketItem: supermarketItem);
+          return DetailItemSupermarketWeb(supermarketItem: supermarketItem);
         }
       },
     );
   }
 }
 
-class ItemSupermarketWeb extends StatelessWidget {
+class DetailItemSupermarketWeb extends StatelessWidget {
   final SupermarketItems supermarketItem;
 
-  ItemSupermarketWeb({required this.supermarketItem});
+  DetailItemSupermarketWeb({required this.supermarketItem});
 
   @override
   Widget build(BuildContext context) {
@@ -86,14 +86,14 @@ class ItemSupermarketWeb extends StatelessWidget {
   }
 }
 
-class ItemSupermarketMobile extends StatelessWidget {
+class DetailItemSupermarketMobile extends StatelessWidget {
   final SupermarketItems supermarketItem;
 
-  ItemSupermarketMobile({required this.supermarketItem});
+  DetailItemSupermarketMobile({required this.supermarketItem});
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
+    //final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold();
   }

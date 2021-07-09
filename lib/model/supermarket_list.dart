@@ -18,7 +18,7 @@ class SupermarketItems {
   });
 }
 
-var supermarketItems = [
+var supermarketItemsList = [
   SupermarketItems(
       itemName: 'Apel Fuji',
       itemImage: 'images/CariAngkutan.png',
