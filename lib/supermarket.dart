@@ -31,7 +31,57 @@ class SupermarketWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return Scaffold();
+    return Scaffold(
+      appBar: kIsWeb ? null : AppBar(),
+      body: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: 16,
+            horizontal: 64,
+          ),
+          child: Center(
+            child: Container(
+              width: screenWidth <= 1200 ? 600 : 1200,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    supermarketItem.itemName,
+                    style: TextStyle(
+                      fontSize: 32,
+                    ),
+                  ),
+                  SizedBox(height: 32),
+                  Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    ClipRRect(
+                      child: Image.asset(supermarketItem.itemImage),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    SizedBox(height: 32),
+                    Expanded(
+                        child: Card(
+                      child: Container(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: <Widget>[
+                            Container(
+                              child: Text(
+                                supermarketItem.itemName,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 30),
+                              ),
+                            ),
+                            Row()
+                          ],
+                        ),
+                      ),
+                    ))
+                  ])
+                ],
+              ),
+            ),
+          )),
+    );
   }
 }
 

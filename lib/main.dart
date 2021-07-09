@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_atms/model/supermarket_list.dart';
+import 'package:flutter_atms/supermarket.dart';
 
 void main() {
   runApp(MyApp());
@@ -116,7 +118,14 @@ class MainMenuGrid extends StatelessWidget {
               ),
             ),
             Card(
-              child: Column(
+              child: 
+              new InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return Supermarket(supermarketItem: ,);
+                  }));
+                },
+                child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
@@ -135,6 +144,7 @@ class MainMenuGrid extends StatelessWidget {
                   )
                 ],
               ),
+              ), 
             ),
             Card(
               child: Column(

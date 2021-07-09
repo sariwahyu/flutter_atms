@@ -1,5 +1,6 @@
 class SupermarketItems {
   String itemName;
+  String itemImage;
   double itemPrice;
   String supermarketLocation;
   double supermarketDistance;
@@ -8,6 +9,7 @@ class SupermarketItems {
 
   SupermarketItems({
     required this.itemName,
+    required this.itemImage,
     required this.itemPrice,
     required this.supermarketLocation,
     required this.supermarketDistance,
@@ -19,6 +21,7 @@ class SupermarketItems {
 var supermarketItems = [
   SupermarketItems(
       itemName: 'Apel Fuji',
+      itemImage: 'images/CariAngkutan.png',
       itemPrice: 16000,
       supermarketLocation: 'Giant Keputih, Sukolilo',
       supermarketDistance: 100.99,
@@ -34,6 +37,7 @@ var supermarketItems = [
       supermarketDescription: 'supermarketDescription'),
   SupermarketItems(
       itemName: 'Keju',
+      itemImage: 'images/CariAngkutan.png',
       itemPrice: 20000,
       supermarketLocation: 'Superindo Keputih, Sukolilo',
       supermarketDistance: 50.99,
@@ -49,6 +53,7 @@ var supermarketItems = [
       supermarketDescription: 'supermarketDescription'),
   SupermarketItems(
       itemName: 'Pepaya',
+      itemImage: 'images/CariAngkutan.png',
       itemPrice: 8000,
       supermarketLocation: 'Pasar Keputih, Sukolilo',
       supermarketDistance: 100.99,
