@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_atms/model/supermarket_list.dart';
-import 'package:flutter_atms/supermarket.dart';
 
 class DetailItemSupermarket extends StatelessWidget {
   final SupermarketItems supermarketItem;
@@ -54,7 +53,10 @@ class DetailItemSupermarketWeb extends StatelessWidget {
                   SizedBox(height: 32),
                   Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                     ClipRRect(
-                      child: Image.asset(supermarketItem.itemImage),
+                      child: Image.asset(
+                        supermarketItem.itemImage,
+                        scale: 0.5,
+                      ),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     SizedBox(height: 32),

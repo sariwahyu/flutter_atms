@@ -21,7 +21,7 @@ class SupermarketItems {
 var supermarketItemsList = [
   SupermarketItems(
       itemName: 'Apel Fuji',
-      itemImage: 'images/CariAngkutan.png',
+      itemImage: 'images/item_apel.jpg',
       itemPrice: 16000,
       supermarketLocation: 'Giant Keputih, Sukolilo',
       supermarketDistance: 100.99,
@@ -37,7 +37,7 @@ var supermarketItemsList = [
       supermarketDescription: 'supermarketDescription'),
   SupermarketItems(
       itemName: 'Keju',
-      itemImage: 'images/CariAngkutan.png',
+      itemImage: 'images/item_keju.jpg',
       itemPrice: 20000,
       supermarketLocation: 'Superindo Keputih, Sukolilo',
       supermarketDistance: 50.99,
@@ -53,7 +53,7 @@ var supermarketItemsList = [
       supermarketDescription: 'supermarketDescription'),
   SupermarketItems(
       itemName: 'Pepaya',
-      itemImage: 'images/CariAngkutan.png',
+      itemImage: 'images/item_pepaya.jpg',
       itemPrice: 8000,
       supermarketLocation: 'Pasar Keputih, Sukolilo',
       supermarketDistance: 100.99,
