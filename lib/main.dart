@@ -118,33 +118,32 @@ class MainMenuGrid extends StatelessWidget {
               ),
             ),
             Card(
-              child: 
-              new InkWell(
+              child: new InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return Supermarket(supermarketItem: ,);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Supermarket();
                   }));
                 },
                 child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  Container(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(8),
-                          child: Image.asset(
-                            'images/Supermarket.png',
-                            fit: BoxFit.cover,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(8),
+                            child: Image.asset(
+                              'images/Supermarket.png',
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-              ), 
             ),
             Card(
               child: Column(
