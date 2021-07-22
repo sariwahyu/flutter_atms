@@ -4,7 +4,7 @@ class SupermarketItems {
   double itemPrice;
   String supermarketLocation;
   double supermarketDistance;
-  List<Map<String, double>> openDays;
+  String openTime;
   String supermarketDescription;
 
   SupermarketItems({
@@ -13,7 +13,7 @@ class SupermarketItems {
     required this.itemPrice,
     required this.supermarketLocation,
     required this.supermarketDistance,
-    required this.openDays,
+    required this.openTime,
     required this.supermarketDescription,
   });
 }
@@ -25,46 +25,25 @@ var supermarketItemsList = [
       itemPrice: 16000,
       supermarketLocation: 'Giant Keputih, Sukolilo',
       supermarketDistance: 100.99,
-      openDays: [
-        {'Senin': 08.00 - 21.00},
-        {'Selasa': 08.00 - 21.00},
-        {'Rabu': 08.00 - 21.00},
-        {'Kamis': 08.00 - 21.00},
-        {'Jumat': 08.00 - 21.00},
-        {'Sabtu': 08.00 - 21.00},
-        {'Minggu': 08.00 - 21.00},
-      ],
-      supermarketDescription: 'supermarketDescription'),
+      openTime: '10.00-22.00',
+      supermarketDescription:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
   SupermarketItems(
       itemName: 'Keju',
       itemImage: 'images/item_keju.jpg',
       itemPrice: 20000,
       supermarketLocation: 'Superindo Keputih, Sukolilo',
       supermarketDistance: 50.99,
-      openDays: [
-        {'Senin': 08.00 - 21.00},
-        {'Selasa': 08.00 - 21.00},
-        {'Rabu': 08.00 - 21.00},
-        {'Kamis': 08.00 - 21.00},
-        {'Jumat': 08.00 - 21.00},
-        {'Sabtu': 08.00 - 21.00},
-        {'Minggu': 08.00 - 21.00},
-      ],
-      supermarketDescription: 'supermarketDescription'),
+      openTime: '10.00-22.00',
+      supermarketDescription:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
   SupermarketItems(
       itemName: 'Pepaya',
       itemImage: 'images/item_pepaya.jpg',
       itemPrice: 8000,
       supermarketLocation: 'Pasar Keputih, Sukolilo',
       supermarketDistance: 100.99,
-      openDays: [
-        {'Senin': 08.00 - 22.00},
-        {'Selasa': 08.00 - 22.00},
-        {'Rabu': 08.00 - 22.00},
-        {'Kamis': 08.00 - 22.00},
-        {'Jumat': 08.00 - 22.00},
-        {'Sabtu': 08.00 - 22.00},
-        {'Minggu': 08.00 - 00.00},
-      ],
-      supermarketDescription: 'supermarketDescription'),
+      openTime: '04.00-17.00',
+      supermarketDescription:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 ];
