@@ -52,10 +52,9 @@ class DetailItemSupermarketWeb extends StatelessWidget {
                         ClipRRect(
                           child: Image.asset(
                             supermarketItem.itemImage,
-                            height: 480,
                             width: 480,
                           ),
-                          borderRadius: BorderRadius.circular(50),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         SizedBox(width: 32),
                         Expanded(

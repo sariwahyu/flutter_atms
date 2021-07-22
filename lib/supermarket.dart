@@ -37,7 +37,10 @@ class ItemsSupermarket extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 flex: 1,
-                child: Image.asset(items.itemImage),
+                child: Image.asset(
+                  items.itemImage,
+                  height: 120,
+                ),
               ),
               Expanded(
                 flex: 2,
@@ -50,6 +53,10 @@ class ItemsSupermarket extends StatelessWidget {
                         items.itemName,
                         style: TextStyle(fontSize: 16),
                       ),
+                      Text(
+                        items.itemPrice.toString(),
+                      ),
+                      Text(items.supermarketLocation),
                       SizedBox(
                         height: 10,
                       ),
